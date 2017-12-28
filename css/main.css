@@ -1,0 +1,6 @@
+textarea {
+	white-space: nowrap;
+	resize: none;
+	width: 400;
+	height: 400;
+}
