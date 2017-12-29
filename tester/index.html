@@ -1,13 +1,46 @@
 <html>
-	<head>
-		<script src="/js/main.js"></script>
-		<link rel="stylesheet" href="/css/main.css">
-	</head>
-	<body>
-		<h1 style="color:red">This is Algorithmic Trader Tester</h1>
-		<textarea id="userCode"></textarea>
-		<input name="buttonExecute" onclick="_execute()" type="button" value="Execute" />
-		
-		<textarea id="output"> </textarea>
-	</body>
+    <head>
+        <script src="/js/main.js">
+        </script>
+        <link href="/css/main.css" rel="stylesheet">
+        </link>
+    </head>
+    <body>
+        <header id="name">
+            <h1>
+                kA!ZEN
+            </h1>
+        </header>
+        <hr>
+            <nav>
+                <input name="alg_name" type="text" value="Algorithm Name">
+                    <select>
+                        <option disabled="true" selected="true">
+                            Select stock
+                        </option>
+                        <option>
+                            <span style>NASDAQ</span>
+                        </option>
+                        <option>
+                            BTC
+                        </option>
+                    </select>
+                </input>
+                <button>
+                    Run
+                </button>
+            </nav>
+            <hr>
+                <span>
+                    <textarea id="input"></textarea>
+                </span>
+                <span>
+                    <textarea id="output" readonly>
+                    </textarea>
+                </span>
+
+                <input name="buttonExecute" onclick="_execute()" type="button" value="Execute"/>
+            </hr>
+        </hr>
+    </body>
 </html>

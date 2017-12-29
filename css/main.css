@@ -1,6 +1,14 @@
 textarea {
-	white-space: nowrap;
-	resize: none;
-	width: 400;
-	height: 400;
+    white-space: nowrap;
+    resize: none;
+}
+
+#input {
+	width: 50%;
+	height: 75%; 
+}
+
+#output {
+	width: 45%;
+	height: 50%;
 }
