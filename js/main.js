@@ -1,3 +1,11 @@
+$(document).ready(function() {
+	$('#input').on("keydown", function() {
+		$('#input code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	});
+});
+
 var _wallet = {
 	_usd: 1000,
 	_stock: 0

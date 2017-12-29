@@ -1,9 +1,12 @@
 <html>
     <head>
-        <script src="/js/main.js">
-        </script>
-        <link href="/css/main.css" rel="stylesheet">
-        </link>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+        <script src="/js/main.js"></script>
+        <link href="/css/main.css" rel="stylesheet"></link>
     </head>
     <body>
         <header id="name">
@@ -30,16 +33,14 @@
                         </option>
                     </select>
                 </input>
-                <input name="buttonExecute" onclick="_runUserCode()" type="button" value="Run"/>
+                <input name="buttonExecute" onclick="_execute()" type="button" value="Run"/>
             </nav>
             <hr>
                 <span>
-                    <textarea id="input">
-                    </textarea>
+                	<div contenteditable="true" id="input"><code class="javascript">var vasily = 3</code></div>
                 </span>
                 <span>
-                    <textarea id="output" readonly="">
-                    </textarea>
+                    <textarea id="output" readonly=""></textarea>
                 </span>
             </hr>
         </hr>
