@@ -3,12 +3,23 @@ textarea {
     resize: none;
 }
 
+html{
+	background-color: #99ff66;
+}
+
 #input {
 	width: 50%;
 	height: 75%; 
 }
 
 #output {
-	width: 45%;
+	position:relative;
+	float:right;
+	width: 49%;
 	height: 50%;
+}
+
+#name{
+	color:purple;
+	background-color:#99ff66;
 }

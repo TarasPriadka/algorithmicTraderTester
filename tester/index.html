@@ -7,7 +7,7 @@
     </head>
     <body>
         <header id="name">
-            <h1>
+            <h1 id="projectName">
                 kA!ZEN
             </h1>
         </header>
@@ -26,9 +26,7 @@
                         </option>
                     </select>
                 </input>
-                <button>
-                    Run
-                </button>
+                <input name="buttonExecute" onclick="_runUserCode()" type="button" value="Run"/>
             </nav>
             <hr>
                 <span>
@@ -38,8 +36,6 @@
                     <textarea id="output" readonly>
                     </textarea>
                 </span>
-
-                <input name="buttonExecute" onclick="_execute()" type="button" value="Execute"/>
             </hr>
         </hr>
     </body>

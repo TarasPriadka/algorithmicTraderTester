@@ -51,7 +51,7 @@ function _updateToday() {
 }
 
 function _runUserCode() {
-	eval(document.getElementById('userCode').value)
+	eval(document.getElementById('input').value)
 }
 
 function _reset() {
