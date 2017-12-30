@@ -1,10 +1,11 @@
 <html>
     <head>
+        <script src="/js/jquery-3.2.1.min.js"> </script>
         <script src="/js/main.js">
         </script>
         <link href="/css/main.css" rel="stylesheet">
         </link>
-        <script src="/js/jquery-3.2.1.min.js"> </script>
+        
     </head>
     <body>
         <header id="name">
@@ -31,7 +32,7 @@
                         </option>
                     </select>
                 </input>
-                <input name="buttonExecute" onclick="alert(_getStringFromDiv('input'))" type="button" value="Run"/>
+                <input name="buttonExecute" onclick="_runUserCode()" type="button" value="Run"/>
             </nav>
             <hr>
                 <span>
