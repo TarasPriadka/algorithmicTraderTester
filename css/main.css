@@ -2,25 +2,26 @@ textarea {
     white-space: nowrap;
     resize: none;
 }
-
-html{
-	background-color: #99ff66;
+html {
+    background-color: #99ff66;
 }
-
 #input {
-	width: 50%;
-	height: 75%; 
-	float:left;
+    width: 50%;
+    height: 75%;
+    overflow: auto;
+    background: white;
+    float: left;
 }
-
 #output {
-	position:relative;
-	float:right;
-	width: 49%;
-	height: 50%;
+    position: relative;
+    float: right;
+    width: 49%;
+    height: 50%;
+    background: white;
+    border: none;
+    
 }
-
-#projectName{
-	color:purple;
-	background-color: white;
+#projectName {
+    color: purple;
+    background-color: white;
 }
