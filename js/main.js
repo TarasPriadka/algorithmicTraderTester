@@ -1,50 +1,8 @@
 $(document).ready(function() {
-	alert('aSome')
-	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('input'), {
+	var myCodeMirror = CodeMirror(document.getElementById('input'), {
 		lineNumbers: true
 	});
 });
-
-function getInputCode() {
-	return $('#input').find('div')
-}
-
-function getCaretPos() {
-	var editableDiv = document.getElementById('input')
-	var caretPos = 0,
-		sel, range;
-	if (window.getSelection) {
-		sel = window.getSelection();
-		if (sel.rangeCount) {
-			alert("RENADKFNS " + $(sel).textContent)
-			range = sel.getRangeAt(0);
-			if (range.commonAncestorContainer.parentNode == editableDiv) {
-				caretPos = range.endOffset;
-			}
-		}
-	} else if (document.selection && document.selection.createRange) {
-		range = document.selection.createRange();
-		if (range.parentElement() == editableDiv) {
-			var tempEl = document.createElement("span");
-			editableDiv.insertBefore(tempEl, editableDiv.firstChild);
-			var tempRange = range.duplicate();
-			tempRange.moveToElementText(tempEl);
-			tempRange.setEndPoint("EndToEnd", range);
-			caretPos = tempRange.text.length;
-		}
-	}
-	return caretPos;
-}
-
-function setCaretPos(line, pos) {
-	var el = document.getElementById("input");
-	var range = document.createRange();
-	var sel = window.getSelection();
-	range.setStart(el.childNodes[line], pos);
-	range.collapse(true);
-	sel.removeAllRanges();
-	sel.addRange(range);
-}
 
 var _wallet = {
 	_usd: 1000,
