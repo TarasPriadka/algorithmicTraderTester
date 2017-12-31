@@ -1,27 +1,62 @@
 textarea {
-    white-space: nowrap;
-    resize: none;
+	white-space: nowrap;
+	resize: none;
 }
+
 html {
-    background-color: #99ff66;
+	background-color: #99ff66;
 }
+
+body {
+	overflow: auto;
+}
+
+.CodeMirror {
+	height: 100%;
+	width: 100%;
+}
+
 #input {
-    width: 50%;
-    height: 75%;
-    overflow: auto;
-    background: white;
-    float: left;
+	overflow: auto;
+	margin-left: 0%;
+	width: 49.5%;
+	height: 75%;
+	background: white;
+	float: left;
 }
-#output {
-    position: relative;
-    float: right;
-    width: 49%;
-    height: 50%;
-    background: white;
-    border: none;
-    
+
+#outputdiv {
+	overflow: auto;
+	background-color: red;
+	position: relative;
+	margin-left: 50.5%;
+	margin-right: 0%;
+	height: 75%;
 }
+
+#graphstuff {
+	text-align: center;
+	font-size: 20;
+	color: #DEB887;
+	background-color: navy;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	width: 98%;
+	height: 69%;
+}
+
+#consoleoutdiv {
+	background: white;
+	position: absolute;
+	margin-left: 1%;
+	top: 71%;
+	width: 98%;
+	height: 28%;
+	border: none;
+}
+
 #projectName {
-    color: purple;
-    background-color: white;
+	color: purple;
+	background-color: white;
 }

@@ -1,47 +1,53 @@
 <html>
-    <head>
-        <script src="/js/main.js">
-        </script>
-        <link href="/css/main.css" rel="stylesheet">
-        </link>
-        <script src="/js/jquery-3.2.1.min.js"> </script>
-    </head>
-    <body>
-        <header id="name">
-            <div id="projectName">
-                <h1>
-                    kA!ZEN
-                </h1>
-            </div>
-        </header>
-        <hr>
-            <nav>
-                <input name="alg_name" type="text" value="Algorithm Name">
-                    <select>
-                        <option disabled="true" selected="true">
-                            Select stock
-                        </option>
-                        <option>
-                            <span style="">
-                                NASDAQ
-                            </span>
-                        </option>
-                        <option>
-                            BTC
-                        </option>
-                    </select>
-                </input>
-                <input name="buttonExecute" onclick="alert(_getStringFromDiv('input'))" type="button" value="Run"/>
-            </nav>
-            <hr>
-                <span>
-                    <div contenteditable="true" id="input"></div>
-                </span>
-                <span>
-                    <textarea id="output" readonly="">
-                    </textarea>
-                </span>
-            </hr>
-        </hr>
-    </body>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="/CodeMirror/lib/codemirror.js"></script>
+		<link rel="stylesheet" href="/CodeMirror/lib/codemirror.css">
+		<script src="/CodeMirror/mode/javascript/javascript.js"></script>
+
+		<script src="/js/main.js"></script>
+		<link href="/css/main.css" rel="stylesheet"></link>
+		<script src="/js/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<header id="name">
+			<div id="projectName">
+				<h1>
+					kA!ZEN
+				</h1>
+			</div>
+		</header>
+		<hr>
+			<nav>
+				<input name="alg_name" type="text" value="Algorithm Name">
+					<select>
+						<option disabled="true" selected="true">
+							Select stock
+						</option>
+						<option>
+							NASDAQ
+						</option>
+						<option>
+							BTC
+						</option>
+					</select>
+				</input>
+				<input name="buttonExecute"
+						onclick="alert(_getStringFromDiv('input'))"
+						type="button" value="Run"/>
+			</nav>
+			<hr>
+			<div>
+				<div id="input">
+				</div>
+				<div id="outputdiv">
+					<div id="graphstuff">GRAPHY GRAPHY</div>
+					<div id="consoleoutdiv">
+						<textarea id="consoleout" readonly="">CONSOLE OUT</textarea>
+					</div>
+				</div>
+			</div>
+		</hr>
+	</body>
 </html>
